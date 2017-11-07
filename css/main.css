@@ -1,0 +1,2 @@
+@import url(./fonts.css);@import url(layout/header.css);@import url(layout/content.css);body,html{height:100%}body{font-family:"PTSans";text-transform:uppercase;color:#000;margin:0}.wrapper{min-height:100%;overflow:hidden;min-width:1100px}.wrapper::after{content:"";display:block;height:190px}.container{display:flex;width:940px;padding:0 10px;margin:0 auto}
+/*# sourceMappingURL=main.css.map */

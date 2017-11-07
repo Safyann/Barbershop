@@ -1,0 +1,42 @@
+.header {
+  margin: 0;
+  background-color: #000;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 30px 20px;
+  width: 500px;
+  margin-right: 260px;
+
+}
+
+.navigation__item {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right :0;
+  }
+}
+
+.navigation__link {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user_block {
+  width: 140px;
+}
+
+.login__icon {
+  background-image: url(../../img/icon/icon-login.png) center center no-repeat;
+}
+
+.login__text {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
