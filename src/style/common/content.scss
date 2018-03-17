@@ -1,0 +1,33 @@
+.main_content {
+  background: url(../../img/bg/index-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  margin: 60px auto;
+}
+
+.index__content {
+  background-image: url(../../img/bg/pattern-bg.jpg);
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.column_left {
+  width: 380px;
+  margin: 50px 0;
+  margin-left: 80px;
+}
+
+.column_right {
+  width: 300px;
+  margin: 50px 80px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 30px;
+}
