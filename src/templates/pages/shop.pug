@@ -1,0 +1,17 @@
+extends ../template
+
+block variables
+  - var title = 'Магазин Borodinski'
+
+block content
+    .wrapper
+        include ../common/header
+        .container
+            h1.title Магазин
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="#").breadcrumbs__link.active Магазин
+            main.content
+    include ../common/footer

@@ -1,0 +1,48 @@
+extends ../template
+
+block variables
+  - var title = 'Новости Borodinski'
+
+block content
+  .wrapper
+    include ../common/header
+    .container
+      h1.title Новости
+      ul.breadcrumbs 
+        li.breadcrumbs__item
+          a(href="index.html").breadcrumbs__link Главная
+        li.breadcrumbs__item
+          a(href="#").breadcrumbs__link.active  Новости
+      main.content
+        ul.news__list
+          li.news__item
+            .news__top
+              img(src="../../img/news/1.jpg", alt="").news__img
+            .news__bottom
+              h2.news__title СЕКРЕТЫ МЯГКОЙ И ПОСЛУШНОЙ БОРОДЫ
+              data(value='2017-09-25').news__data 25.09.2017
+              a(href="#").news__btn.btn Подробнее
+          li.news__item
+            .news__top
+              img(src="../../img/news/2.jpg", alt="").news__img
+            .news__bottom
+              h2.news__title МЫ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМЕЙСТЕР! 
+              data(value='2017-09-25').news__data 25.09.2017
+              .news__btn.btn Подробнее
+          li.news__item
+            .news__top
+              img(src="../../img/news/3.jpg", alt="").news__img
+            .news__bottom
+              h2.news__title СЕКРЕТЫ МЯГКОЙ И ПОСЛУШНОЙ БОРОДЫ
+              data(value='2017-09-25').news__data 25.09.2017
+              .news__btn.btn Подробнее
+          li.news__item
+            .news__top
+              img(src="../../img/news/4.jpg", alt="").news__img
+            .news__bottom
+              h2.news__title СЕКРЕТЫ МЯГКОЙ И ПОСЛУШНОЙ БОРОДЫ
+              data(value='2017-09-25').news__data 25.09.2017
+              .news__btn.btn Подробнее
+      sidebar.sidebar
+      include ../common/pagination
+  include ../common/footer

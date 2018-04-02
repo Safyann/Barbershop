@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination__link {
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    margin: 0 5px;
+    &:hover {
+        background-color: $brown;
+        transition: .7s;
+    }
+    &.active{
+        background-color: white;
+        color: black;
+    }
+}

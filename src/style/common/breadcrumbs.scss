@@ -1,0 +1,28 @@
+.breadcrumbs {
+    margin-bottom: 50px;
+}
+
+.breadcrumbs__item {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 135%;
+        border: 3px solid black;
+        transform: rotate(45deg) translate(-50%);
+    }
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.breadcrumbs__link {
+    color: black;
+    font-size: 14px;
+    &.active {
+        color: $ligth-grey;
+    }
+}

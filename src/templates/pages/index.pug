@@ -4,18 +4,18 @@ block variables
   - var title = 'Barbershop Borodinski'
 
 block content
-  .wapper
+  .wrapper
     header.header
       .container.header_container
         ul.navigation__list
           li.navigation__item
             a.navigation__link(href='#') Информация
           li.navigation__item
-            a.navigation__link(href='#') Новости
+            a.navigation__link(href='news.html') Новости
           li.navigation__item
-            a.navigation__link(href='#') Прайс-лист
+            a.navigation__link(href='price.html') Прайс-лист
           li.navigation__item
-            a.navigation__link(href='#') Магазин
+            a.navigation__link(href='shop.html') Магазин
           li.navigation__item
             a.navigation__link(href='#') Контакты
         .user_block
@@ -43,12 +43,12 @@ block content
           .column.column_left
             .news
               h2.title Новости
-              ul.news__list
-                li.news__item
+              ul.news__list_main
+                li.news__item_main
                   .news__text.text
                     | Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
                   data.news__data(value='2017-09-25') 25 сентября
-                li.news__item
+                li.news__item_main
                   .news__text.text
                     | В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные ряды
                   data.news__data(value='2017-09-19') 19 сентября
@@ -89,5 +89,5 @@ block content
               .form__row
                 input.input(type='text', name='name', placeholder='Ваше имя')
                 input.input(type='tel', name='tel', placeholder='Телефон')
-              button.btn.btn__form(type='submit', name='button') Отправть
+              button.btn.btn__form(type='submit', name='button') Отправить
   include ../common/footer.pug

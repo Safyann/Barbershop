@@ -1,0 +1,18 @@
+extends ../template
+
+block variables
+  - var title = 'Прайс-лист Borodinski'
+
+block content
+    .wrapper
+        include ../common/header
+        .container
+            h1.title Прайс-лист
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="#").breadcrumbs__link.active Прайс-лист
+            h1.price__title ИСТИННО МУЖСКАЯ КЛАССИКА
+            main.content
+    include ../common/footer
