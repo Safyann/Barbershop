@@ -17,12 +17,14 @@
     &:last-child::after {
         display: none;
     }
+    &:last-child {
+        .breadcrumbs__link {
+            color: $ligth-grey;
+        }
+    }
 }
 
 .breadcrumbs__link {
     color: black;
     font-size: 14px;
-    &.active {
-        color: $ligth-grey;
-    }
 }

@@ -7,12 +7,44 @@ block content
     .wrapper
         include ../common/header
         .container
-            h1.title Прайс-лист
+            h1.main__title Прайс-лист
             ul.breadcrumbs 
                 li.breadcrumbs__item
                     a(href="index.html").breadcrumbs__link Главная
                 li.breadcrumbs__item
-                    a(href="#").breadcrumbs__link.active Прайс-лист
-            h1.price__title ИСТИННО МУЖСКАЯ КЛАССИКА
+                    a(href="#").breadcrumbs__link Прайс-лист
             main.content
+                h2.price__title ИСТИННО МУЖСКАЯ КЛАССИКА
+                .price__content_row
+                    .price__column.price__column__left
+                        h3.adw__title
+                            |МЫ ИСПОЛЬЗУЕМ ТОЛЬКО 
+                            br
+                            |ЛУЧШИЕ СРЕДСТВА:
+                        ul.tools
+                            li.tools__item Baxter of California
+                            li.tools__item Mr Natty
+                            li.tools__item Suavecito
+                            li.tools__item Malin+Goetz
+                    .price__column.price__column__right
+                        h3.adw__title
+                            |ЦЕНЫ НА УСЛУГИ 
+                            br
+                            |НАШИХ МАСТЕРОВ:
+                        table
+                            tr.price__row
+                                td.price__cell Стрижка
+                                td.price__cell 1500 p.
+                            tr.price__row
+                                td.price__cell Стрижка бороды
+                                td.price__cell 500 p.
+                            tr.price__row
+                                td.price__cell Накрутка усов
+                                td.price__cell 350 p.
+                h3.adw__title НЕСКОЛЬКО СЛОВ О НАС:
+                .price__content_row
+                    .price__column.price__column__left
+                        p Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+                    .price__column.price__column__right
+                        p Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
     include ../common/footer
