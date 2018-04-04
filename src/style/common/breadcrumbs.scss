@@ -4,17 +4,17 @@
 
 .breadcrumbs__item {
     position: relative;
-    display: inline-block;
-    margin-right: 30px;
-    &::after {
+    display: inline;
+    margin-right: 20px;
+    &::before {
         content: "";
         position: absolute;
         top: 50%;
-        left: 135%;
+        left: -13px;
         border: 3px solid black;
         transform: rotate(45deg) translate(-50%);
     }
-    &:last-child::after {
+    &:first-child::before {
         display: none;
     }
     &:last-child {
