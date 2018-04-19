@@ -22,12 +22,21 @@
   &:hover {
     background-color: $grey;
   }
+
+  &.active {
+    border-bottom: 5px solid white;
+  }
 }
 
 .navigation__link {
   margin: 0;
   color: $white;
   text-decoration: none;
+
+  &.active {
+    border-bottom: 5px solid white;
+    padding-bottom: 20px;
+  }
 }
 
 .user_block {
