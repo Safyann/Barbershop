@@ -15,5 +15,27 @@ html
 
     body
         block content
+        section.modal.modal-login
+            h2 ЛИЧНЫЙ КАБИНЕТ
+            p.modal-description Введите пожалуйста свой логин и пароль
+            form.login-form(action='https://echo.htmlacademy.ru', method='post')
+                p
+                label.visually-hidden(for='user-login') Логин
+                input#user-login.login-icon-user(type='text', name='login', placeholder='Логин')
+                p
+                label.visually-hidden(for='user-password') Пароль
+                input#user-password.login-icon-password(type='password', name='password', placeholder='Пароль')
+                p.login-help
+                    label.login-checkbox
+                        input.visually-hidden(type='checkbox', name='remember')
+                        span.checkbox-indicator
+                        |ЗАПОМНИТЕ МЕНЯ
+                    a.restore(href='#') Я ЗАБЫЛ ПАРОЛЬ!
+                button.btn(type='submit') Войти
+            button.modal-close(type='button') Закрыть
+        section.modal.modal-map
+            h2.visually-hidden Как до нас добраться
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426', width='766', height='560', allowfullscreen='')
+            button.modal-close(type='button') Закрыть
         script(src='js/main.min.js')
         
